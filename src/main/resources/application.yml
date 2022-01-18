@@ -1,0 +1,17 @@
+server.port: 8686
+feign:
+  httpclient.enabled: true
+  client.config.default.loggerLevel: full
+
+giphy:
+  url: 'http://api.giphy.com/v1/gifs/search'
+  api_key: 'uQeeAQpy9o30ObMDzBuKsPLiROzfx7rt'
+
+exchange_rates:
+  url: 'https://openexchangerates.org/api'
+  app_id: 'c01f180784e94065ab742d1971b80b59'
+
+base_currency: 'USD'
+
+logging.level.ratesapi.clients.GiphyClient: DEBUG
+logging.level.ratesapi.clients.ExchangeRatesClient: DEBUG
